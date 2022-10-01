@@ -1,0 +1,91 @@
+.subheader {
+  padding: 16px;
+  background: var(--custom-color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  .subheaderMenuItem {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .subheaderMenuItemIcon {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.hero {
+  padding: 32px 16px;
+  padding-bottom: 0;
+  background-image: url("/assets/index-page/hero-background.svg");
+  background-color: #1f2335;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: white;
+  .heroHeadline {
+    font-size: xx-large;
+  }
+  .heroTextSmall {
+    font-size: small;
+  }
+  .heroCta {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    .heroCtaButton {
+      padding: 16px 24px;
+      border-radius: 16px;
+      background: var(--custom-color-primary);
+      font-size: large;
+      font-weight: bold;
+    }
+    .heroCtaProfilePictures {
+      display: flex;
+      img {
+        height: 48px;
+        width: 48px;
+        border-radius: 100%;
+        border: #1f2335 solid 2px;
+        margin-left: -16px;
+      }
+    }
+  }
+  .heroImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.onlineCoursesSelectionSection {
+  padding: 16px;
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.coursesListSection {
+  padding: 16px;
+  h2 {
+    font-size: 24px;
+  }
+  a.seeMoreLink {
+    font-size: 16px;
+    color: #6f7e8f;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    svg {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
