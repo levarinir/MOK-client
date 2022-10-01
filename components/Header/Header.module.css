@@ -1,0 +1,27 @@
+.header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header__menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header .header__menu .header__menu_cart_button {
+  padding: 8px;
+  height: 44px;
+  width: 44px;
+  color: var(--custom-color-secondary);
+}
+
+.header .header__menu .header__menu_nav_toggle_button {
+  padding: 8px;
+  height: 44px;
+  width: 44px;
+  border: 2px solid var(--custom-color-secondary);
+  border-radius: 16px;
+}
