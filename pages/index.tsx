@@ -4,6 +4,36 @@ import styles from "./index.module.scss";
 import { ChevronDownIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
+import CourseCard, { CourseCardProps } from "@/components/CourseCard";
+
+export interface CoursesSectionProps {
+  courses: CourseCardProps[];
+  sectionTitle: string;
+  seeMoreLinkHref: string;
+  seeMoreLinkText: string;
+}
+
+function CoursesSection(props: CoursesSectionProps) {
+  return (
+    <section className={styles.coursesListSection}>
+      <section className={styles.coursesListSectionHeader}>
+        <h2>{props.sectionTitle}</h2>
+        <Link href={props.seeMoreLinkHref}>
+          <a className={styles.seeMoreLink}>
+            <span>{props.seeMoreLinkText}</span>
+            <ArrowLeftIcon />
+          </a>
+        </Link>
+      </section>
+
+      <div className={styles.cardList}>
+        {props.courses.map((course, index) => (
+          <CourseCard key={index} {...course} />
+        ))}
+      </div>
+    </section>
+  );
+}
 
 export default function HomePage() {
   const meta = (
@@ -57,6 +87,17 @@ export default function HomePage() {
     </section>
   );
 
+  const testimonySection = (
+    <section className={styles.testimonySection}>
+      <p className={styles.testimonyMessage}>
+        שדוח ךותב ךיא םיהדמ הז רשאמ רתוי דומלל יתחלצה הדות .רטסמסה לכב יתדמל
+        הרזעה לע םכל הבר
+      </p>
+      <p>רותם ניסים</p>
+      <p> הקיטמתמ תניכמב טנדוטס</p>
+    </section>
+  );
+
   return (
     <div>
       {meta}
@@ -64,22 +105,58 @@ export default function HomePage() {
       {subHeader}
       {hero}
 
-      {/* <section className={styles.onlineCoursesSelectionSection}>
-        <h2 className="">מבחר ענק של קורסים אונליין</h2>
+      <CoursesSection
+        sectionTitle="קורסי תואר ראשון"
+        seeMoreLinkText="צפייה בכל הקורסים"
+        seeMoreLinkHref="#"
+        courses={Array(4).fill({
+          cardImageSrc: "https://picsum.photos/id/237/200/300",
+          title: "קורס לשאלון 482 (805)",
+          href: "#",
+          description: "מרצה הקורס: ארז כהן",
+          duration: 8400,
+          isFavorited: false,
+          price: 48,
+          rating: 0.82,
+          viewerCount: 1000,
+        })}
+      />
 
-      </section> */}
+      <CoursesSection
+        sectionTitle="קורסי מכינות קדם אקדמיות"
+        seeMoreLinkText="צפייה בכל הקורסים"
+        seeMoreLinkHref="#"
+        courses={Array(4).fill({
+          cardImageSrc: "https://picsum.photos/id/237/200/300",
+          title: "קורס לשאלון 482 (805)",
+          href: "#",
+          description: "מרצה הקורס: ארז כהן",
+          duration: 8400,
+          isFavorited: false,
+          price: 48,
+          rating: 0.82,
+          viewerCount: 1000,
+        })}
+      />
 
-      <section className={styles.coursesListSection}>
-        <h2>קורסי בגרות במתמטיקה</h2>
-        <Link href="#">
-          <a className={styles.seeMoreLink}>
-            <span>צפייה בכל הקורסים</span>
-            <ArrowLeftIcon />
-          </a>
-        </Link>
+      <CoursesSection
+        sectionTitle="קורסי תואר ראשון"
+        seeMoreLinkText="צפייה בכל הקורסים"
+        seeMoreLinkHref="#"
+        courses={Array(4).fill({
+          cardImageSrc: "https://picsum.photos/id/237/200/300",
+          title: "קורס לשאלון 482 (805)",
+          href: "#",
+          description: "מרצה הקורס: ארז כהן",
+          duration: 8400,
+          isFavorited: false,
+          price: 48,
+          rating: 0.82,
+          viewerCount: 1000,
+        })}
+      />
 
-        
-      </section>
+      {testimonySection}
     </div>
   );
 }
