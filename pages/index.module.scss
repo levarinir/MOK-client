@@ -31,46 +31,73 @@
   padding: 32px 16px;
   padding-bottom: 0;
   background-image: url("/assets/index-page/hero-background.svg");
+  background-size: cover;
   background-color: #1f2335;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  color: white;
-  .heroHeadline {
-    font-size: xx-large;
-  }
-  .heroTextSmall {
-    font-size: small;
-  }
-  .heroCta {
-    margin: 16px 0;
+  overflow: hidden;
+  .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    .heroCtaButton {
-      padding: 16px 24px;
-      border-radius: 16px;
-      background: var(--custom-color-primary);
-      font-size: large;
-      font-weight: bold;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-end;
     }
-    .heroCtaProfilePictures {
+    .heroTexts {
       display: flex;
-      img {
-        height: 48px;
-        width: 48px;
-        border-radius: 100%;
-        border: #1f2335 solid 2px;
-        margin-left: -16px;
+      flex-direction: column;
+      gap: 32px;
+      color: white;
+      align-items: center;
+      @media (min-width: 768px) {
+        align-items: flex-start;
+      }
+      .heroHeadline {
+        font-size: xx-large;
+        @media (min-width: 768px) {
+          font-size: 64px;
+          font-weight: bold;
+        }
+      }
+      .heroTextSmall {
+        font-size: small;
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      .heroCta {
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+        .heroCtaProfilePictures {
+          display: flex;
+          img {
+            height: 48px;
+            width: 48px;
+            border-radius: 100%;
+            border: #1f2335 solid 2px;
+            margin-left: -16px;
+            &:last-child {
+              margin-left: 0;
+            }
+          }
+        }
       }
     }
-  }
-  .heroImage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .heroImage {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 768px) {
+        transform: scale(1.5);
+        transform-origin: bottom;
+      }
+    }
   }
 }
 

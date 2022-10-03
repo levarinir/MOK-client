@@ -56,29 +56,31 @@ export default function HomePage() {
   const hero = (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1 className={styles.heroHeadline}>
-          קורסים אונליין לבגרויות, מכינות קדם אקדמיות ותואר ראשון
-        </h1>
-        <p className={styles.heroTextSmall}>
-          לימודים לתלמידי בית ספר, משלימי ומשפרי בגרויות וחיילים משוחררים בכל
-          רמות הלימוד במתמטיקה ופיסיקה. לימודי מכינות קדם אקדמיות לשיפור תנאי
-          קבלה לתואר ראשון.
-        </p>
-        <div className={styles.heroCta}>
-          <button className={styles.heroCtaButton}>יש לי שאלה!</button>
-          <div className={styles.heroCtaProfilePictures}>
-            {/* TODO: replace placeholder image with actual profile pictures */}
-            <img src="https://thispersondoesnotexist.com/image" alt="" />
-            <img src="https://thispersondoesnotexist.com/image" alt="" />
-            <img src="https://thispersondoesnotexist.com/image" alt="" />
-            <img src="https://thispersondoesnotexist.com/image" alt="" />
+        <div className={styles.heroTexts}>
+          <h1 className={styles.heroHeadline}>
+            קורסים אונליין לבגרויות, מכינות קדם אקדמיות ותואר ראשון
+          </h1>
+          <p className={styles.heroTextSmall}>
+            לימודים לתלמידי בית ספר, משלימי ומשפרי בגרויות וחיילים משוחררים בכל
+            רמות הלימוד במתמטיקה ופיסיקה. לימודי מכינות קדם אקדמיות לשיפור תנאי
+            קבלה לתואר ראשון.
+          </p>
+          <Button>יש לי שאלה!</Button>
+          <div className={styles.heroCta}>
+            <div className={styles.heroCtaProfilePictures}>
+              {/* TODO: replace placeholder image with actual profile pictures */}
+              <img src="https://thispersondoesnotexist.com/image" alt="" />
+              <img src="https://thispersondoesnotexist.com/image" alt="" />
+              <img src="https://thispersondoesnotexist.com/image" alt="" />
+              <img src="https://thispersondoesnotexist.com/image" alt="" />
+            </div>
+            <p>םיעובק םישמתשמ +45k</p>
           </div>
-          <p>םיעובק םישמתשמ +45k</p>
         </div>
         <div className={styles.heroImage}>
           <Image
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             src="/assets/index-page/hero-image.png"
             alt="Student"
           />
@@ -111,8 +113,8 @@ export default function HomePage() {
             <h3>תתחילו מצפייה חינם בפרקים</h3>
             <p>
               אנחנו לא רוצים שתקנו חתול בשק, תבחרו כל קורס שמעניין אתכם ותוכלו
-              לראות לגמרי בחינם מספר פרקים שבחרנו בשבילכם מבלי לרכוש את הקורס כדי
-              שתתרשמו מאיכות המרצים ושיטת ההוראה שלנו
+              לראות לגמרי בחינם מספר פרקים שבחרנו בשבילכם מבלי לרכוש את הקורס
+              כדי שתתרשמו מאיכות המרצים ושיטת ההוראה שלנו
             </p>
             <div className={styles.buttons}>
               <Button>םיסרוקב ופצ</Button>
@@ -126,8 +128,8 @@ export default function HomePage() {
             <h3>תתחילו מצפייה חינם בפרקים</h3>
             <p>
               אנחנו לא רוצים שתקנו חתול בשק, תבחרו כל קורס שמעניין אתכם ותוכלו
-              לראות לגמרי בחינם מספר פרקים שבחרנו בשבילכם מבלי לרכוש את הקורס כדי
-              שתתרשמו מאיכות המרצים ושיטת ההוראה שלנו
+              לראות לגמרי בחינם מספר פרקים שבחרנו בשבילכם מבלי לרכוש את הקורס
+              כדי שתתרשמו מאיכות המרצים ושיטת ההוראה שלנו
             </p>
             <div className={styles.buttons}>
               <Button>םיסרוקב ופצ</Button>
