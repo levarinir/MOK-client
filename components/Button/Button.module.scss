@@ -1,0 +1,13 @@
+.button {
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-size: large;
+  font-weight: bold;
+  border: 2px solid transparent;
+  &.primary {
+    background: var(--custom-color-primary);
+  }
+  &.outline {
+    border-color: rgba(28, 33, 53, 0.15);
+  }
+}
