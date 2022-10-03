@@ -93,12 +93,14 @@ export default function HomePage() {
     <section className={styles.testimonySection}>
       <div className={styles.container}>
         <img src="/assets/index-page/testimony-image.png" alt="" />
-        <p className={styles.testimonyMessage}>
-          שדוח ךותב ךיא םיהדמ הז רשאמ רתוי דומלל יתחלצה הדות .רטסמסה לכב יתדמל
-          הרזעה לע םכל הבר
-        </p>
-        <p>רותם ניסים</p>
-        <p> הקיטמתמ תניכמב טנדוטס</p>
+        <div className={styles.testimonyContent}>
+          <p className={styles.testimonyMessage}>
+            שדוח ךותב ךיא םיהדמ הז רשאמ רתוי דומלל יתחלצה הדות .רטסמסה לכב יתדמל
+            הרזעה לע םכל הבר
+          </p>
+          <p className={styles.testimonyName}>רותם ניסים</p>
+          <p> הקיטמתמ תניכמב טנדוטס</p>
+        </div>
       </div>
     </section>
   );
@@ -142,7 +144,7 @@ export default function HomePage() {
   );
 
   return (
-    <div>
+    <main>
       {meta}
       <Header />
       {subHeader}
@@ -201,6 +203,6 @@ export default function HomePage() {
 
       {testimonySection}
       {howItWorksSection}
-    </div>
+    </main>
   );
 }
