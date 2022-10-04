@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import CourseCard, { CourseCardProps } from "@/components/CourseCard";
 import { Button } from "@/components/Button";
+import { Input } from "@/components/Input";
+import { UserIcon } from "@heroicons/react/24/outline";
 
 export interface CoursesSectionProps {
   courses: CourseCardProps[];
@@ -163,6 +165,20 @@ export default function HomePage() {
     </section>
   );
 
+  const registerAccountFormSection = (
+    <section className={styles.registerAccountFormSection}>
+      <div className={styles.container}>
+        <h2>רשק תריצי</h2>
+        <form>
+          <Input leadingElement={<UserIcon />} placeholder="אלמ םש" />
+          <Input leadingElement={<UserIcon />} placeholder="ל”אוד" />
+          <Input leadingElement={<UserIcon />} placeholder="ןופלט" />
+          <Button>חלש</Button>
+        </form>
+      </div>
+    </section>
+  );
+
   return (
     <main>
       {meta}
@@ -224,6 +240,7 @@ export default function HomePage() {
       {testimonySection}
       {howItWorksSection}
       {bottomHeroSection}
+      {registerAccountFormSection}
     </main>
   );
 }
