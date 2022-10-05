@@ -1,0 +1,68 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 1140px;
+  }
+}
+
+.howItWorkSection {
+  .container {
+    padding: 16px;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    h2 {
+      margin-bottom: 48px;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 32px;
+      }
+    }
+    article {
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      gap: 16px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 128px;
+        &:nth-child(odd) {
+          flex-direction: row-reverse;
+        }
+      }
+      img {
+        height: 180px;
+        width: 100%;
+        margin-bottom: 16px;
+        border-radius: 24px;
+        object-fit: cover;
+        filter: drop-shadow(0px 18px 29px rgba(131, 153, 173, 0.5));
+        @media (min-width: 768px) {
+          height: 480px;
+        }
+      }
+      article {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 16px;
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        p {
+          color: #9fa4b9;
+        }
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}

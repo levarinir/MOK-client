@@ -1,9 +1,5 @@
 import Head from "next/head";
 import Header from "@/components/Header";
-import styles from "./index.module.scss";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/Button";
 import { SubHeader } from "@/components/SubHeader";
 import { HomePageCoursesListSection } from "@/components/HomePageCoursesSection";
 import { HomePageHeroSection } from "@/components/HomePageHeroSection";
@@ -13,50 +9,13 @@ import { HomePageTestimonySection } from "@/components/HomePageTestimonySection"
 import { Footer } from "@/components/Footer";
 import { HomePageBottomHeroSection } from "@/components/HomePageBottomHeroSection";
 import { HomePageRegisterAccountFormSection } from "@/components/HomePageRegisterAccountFormSection";
+import { HomePageHowItWorksSection } from "@/components/HomePageHowItWorksSection";
 
 export default function HomePage() {
   const meta = (
     <Head>
       <title>Mok - בגרויות, מכינות אקדמיה</title>
     </Head>
-  );
-
-  const howItWorksSection = (
-    <section className={styles.howItWorkSection}>
-      <div className={styles.container}>
-        <h2>איך MOK עובדת?</h2>
-        <article>
-          <img src="https://picsum.photos/id/237/200/300" alt="" />
-          <article className="">
-            <h3>תתחילו מצפייה חינם בפרקים</h3>
-            <p>
-              אנחנו לא רוצים שתקנו חתול בשק, תבחרו כל קורס שמעניין אתכם ותוכלו
-              לראות לגמרי בחינם מספר פרקים שבחרנו בשבילכם מבלי לרכוש את הקורס
-              כדי שתתרשמו מאיכות המרצים ושיטת ההוראה שלנו
-            </p>
-            <div className={styles.buttons}>
-              <Button>םיסרוקב ופצ</Button>
-              <Button variant="outline">וחיוורתו וצילמת</Button>
-            </div>
-          </article>
-        </article>
-        <article>
-          <img src="https://picsum.photos/id/237/200/300" alt="" />
-          <article className="">
-            <h3>תתחילו מצפייה חינם בפרקים</h3>
-            <p>
-              אנחנו לא רוצים שתקנו חתול בשק, תבחרו כל קורס שמעניין אתכם ותוכלו
-              לראות לגמרי בחינם מספר פרקים שבחרנו בשבילכם מבלי לרכוש את הקורס
-              כדי שתתרשמו מאיכות המרצים ושיטת ההוראה שלנו
-            </p>
-            <div className={styles.buttons}>
-              <Button>םיסרוקב ופצ</Button>
-              <Button variant="outline">וחיוורתו וצילמת</Button>
-            </div>
-          </article>
-        </article>
-      </div>
-    </section>
   );
 
   return (
@@ -67,7 +26,6 @@ export default function HomePage() {
       <HomePageHeroSection />
       <HomePageCoursesSelectionSection />
       <HomePageHowToEarnPointsSection />
-
       <HomePageCoursesListSection
         sectionTitle="קורסי תואר ראשון"
         seeMoreLinkText="צפייה בכל הקורסים"
@@ -84,7 +42,6 @@ export default function HomePage() {
           viewerCount: 1000,
         })}
       />
-
       <HomePageCoursesListSection
         sectionTitle="קורסי מכינות קדם אקדמיות"
         seeMoreLinkText="צפייה בכל הקורסים"
@@ -101,7 +58,6 @@ export default function HomePage() {
           viewerCount: 1000,
         })}
       />
-
       <HomePageCoursesListSection
         sectionTitle="קורסי תואר ראשון"
         seeMoreLinkText="צפייה בכל הקורסים"
@@ -118,9 +74,8 @@ export default function HomePage() {
           viewerCount: 1000,
         })}
       />
-
       <HomePageTestimonySection />
-      {howItWorksSection}
+      <HomePageHowItWorksSection />
       <HomePageBottomHeroSection />
       <HomePageRegisterAccountFormSection />
       <Footer />
