@@ -66,28 +66,3 @@
     }
   }
 }
-
-.registerAccountFormSection {
-  background-image: url("/assets/index-page/hero-background.svg");
-  background-size: cover;
-  background-color: #f7ac3e;
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 32px;
-    h2 {
-      margin-bottom: 48px;
-      font-size: 32px;
-      font-weight: 700;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      @media (min-width: 768px) {
-        flex-direction: row;
-      }
-    }
-  }
-}
