@@ -1,0 +1,38 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 1140px;
+  }
+}
+
+footer.footerSection {
+  background-color: var(--custom-color-secondary);
+  .container {
+    .navigation {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      article {
+        p {
+          color: white;
+          font-size: 24px;
+        }
+        ul {
+          li {
+            color: #9fa4b9;
+          }
+        }
+      }
+    }
+    .copyright {
+      padding: 16px;
+      border-top: 2px solid white;
+      color: white;
+    }
+  }
+}
