@@ -1,7 +1,9 @@
 .button {
-  padding: 16px 24px;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
   border-radius: 16px;
-  font-size: large;
+  font-size: 14px;
   font-weight: bold;
   border: 2px solid transparent;
   &.primary {
@@ -9,5 +11,10 @@
   }
   &.outline {
     border-color: rgba(28, 33, 53, 0.15);
+  }
+  &.secondary {
+    color: white;
+    background-color: var(--custom-color-secondary);
+    border-color: var(--custom-color-secondary);
   }
 }

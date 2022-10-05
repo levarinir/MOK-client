@@ -2,7 +2,7 @@ import styles from "./Button.module.scss";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "secondary";
 }
 
 export default function Button({ className, ...restOfProps }: ButtonProps) {
