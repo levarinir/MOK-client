@@ -19,66 +19,68 @@ export default function HomePage() {
   );
 
   return (
-    <main>
+    <>
       {meta}
       <Header />
       <SubHeader />
-      <HomePageHeroSection />
-      <HomePageCoursesSelectionSection />
-      <HomePageHowToEarnPointsSection />
-      <HomePageCoursesListSection
-        sectionTitle="קורסי תואר ראשון"
-        seeMoreLinkText="צפייה בכל הקורסים"
-        seeMoreLinkHref="#"
-        courses={Array(4).fill({
-          cardImageSrc: "https://picsum.photos/id/237/200/300",
-          title: "קורס לשאלון 482 (805)",
-          href: "#",
-          description: "מרצה הקורס: ארז כהן",
-          duration: 8400,
-          isFavorited: false,
-          price: 48,
-          rating: 0.82,
-          viewerCount: 1000,
-        })}
-      />
-      <HomePageCoursesListSection
-        sectionTitle="קורסי מכינות קדם אקדמיות"
-        seeMoreLinkText="צפייה בכל הקורסים"
-        seeMoreLinkHref="#"
-        courses={Array(4).fill({
-          cardImageSrc: "https://picsum.photos/id/237/200/300",
-          title: "קורס לשאלון 482 (805)",
-          href: "#",
-          description: "מרצה הקורס: ארז כהן",
-          duration: 8400,
-          isFavorited: false,
-          price: 48,
-          rating: 0.82,
-          viewerCount: 1000,
-        })}
-      />
-      <HomePageCoursesListSection
-        sectionTitle="קורסי תואר ראשון"
-        seeMoreLinkText="צפייה בכל הקורסים"
-        seeMoreLinkHref="#"
-        courses={Array(4).fill({
-          cardImageSrc: "https://picsum.photos/id/237/200/300",
-          title: "קורס לשאלון 482 (805)",
-          href: "#",
-          description: "מרצה הקורס: ארז כהן",
-          duration: 8400,
-          isFavorited: false,
-          price: 48,
-          rating: 0.82,
-          viewerCount: 1000,
-        })}
-      />
-      <HomePageTestimonySection />
-      <HomePageHowItWorksSection />
-      <HomePageBottomHeroSection />
-      <HomePageRegisterAccountFormSection />
+      <main>
+        <HomePageHeroSection />
+        <HomePageCoursesSelectionSection />
+        <HomePageHowToEarnPointsSection />
+        <HomePageCoursesListSection
+          sectionTitle="קורסי תואר ראשון"
+          seeMoreLinkText="צפייה בכל הקורסים"
+          seeMoreLinkHref="#"
+          courses={Array(4).fill({
+            cardImageSrc: "https://picsum.photos/id/237/200/300",
+            title: "קורס לשאלון 482 (805)",
+            href: "#",
+            description: "מרצה הקורס: ארז כהן",
+            duration: 8400,
+            isFavorited: false,
+            price: 48,
+            rating: 0.82,
+            viewerCount: 1000,
+          })}
+        />
+        <HomePageCoursesListSection
+          sectionTitle="קורסי מכינות קדם אקדמיות"
+          seeMoreLinkText="צפייה בכל הקורסים"
+          seeMoreLinkHref="#"
+          courses={Array(4).fill({
+            cardImageSrc: "https://picsum.photos/id/237/200/300",
+            title: "קורס לשאלון 482 (805)",
+            href: "#",
+            description: "מרצה הקורס: ארז כהן",
+            duration: 8400,
+            isFavorited: false,
+            price: 48,
+            rating: 0.82,
+            viewerCount: 1000,
+          })}
+        />
+        <HomePageCoursesListSection
+          sectionTitle="קורסי תואר ראשון"
+          seeMoreLinkText="צפייה בכל הקורסים"
+          seeMoreLinkHref="#"
+          courses={Array(4).fill({
+            cardImageSrc: "https://picsum.photos/id/237/200/300",
+            title: "קורס לשאלון 482 (805)",
+            href: "#",
+            description: "מרצה הקורס: ארז כהן",
+            duration: 8400,
+            isFavorited: false,
+            price: 48,
+            rating: 0.82,
+            viewerCount: 1000,
+          })}
+        />
+        <HomePageTestimonySection />
+        <HomePageHowItWorksSection />
+        <HomePageBottomHeroSection />
+        <HomePageRegisterAccountFormSection />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
