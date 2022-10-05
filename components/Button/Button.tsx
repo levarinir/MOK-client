@@ -5,12 +5,15 @@ export interface ButtonProps
   variant?: "primary" | "outline";
 }
 
-export default function Button(props: ButtonProps) {
-  const { variant = "primary" } = props;
+export default function Button({ className, ...restOfProps }: ButtonProps) {
+  const { variant = "primary" } = restOfProps;
 
   return (
-    <button {...props} className={`${styles.button} ${styles[variant]}`}>
-      {props.children}
+    <button
+      {...restOfProps}
+      className={`${styles.button} ${styles[variant]} ${className}`}
+    >
+      {restOfProps.children}
     </button>
   );
 }
