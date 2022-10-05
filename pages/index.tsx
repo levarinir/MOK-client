@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import styles from "./index.module.scss";
-import { ChevronDownIcon, ArrowLeftIcon } from "@heroicons/react/24/solid";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import CourseCard, { CourseCardProps } from "@/components/CourseCard";
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import { UserIcon } from "@heroicons/react/24/outline";
+import { SubHeader } from "@/components/SubHeader";
 
 export interface CoursesSectionProps {
   courses: CourseCardProps[];
@@ -44,15 +45,6 @@ export default function HomePage() {
     <Head>
       <title>Mok - בגרויות, מכינות אקדמיה</title>
     </Head>
-  );
-
-  const subHeader = (
-    <section className={styles.subheader}>
-      <button className={styles.subheaderMenuItem}>
-        <ChevronDownIcon className={styles.subheaderMenuItemIcon} />
-        <span>בחירת תחום לימוד</span>
-      </button>
-    </section>
   );
 
   const hero = (
@@ -293,7 +285,7 @@ export default function HomePage() {
     <main>
       {meta}
       <Header />
-      {subHeader}
+      <SubHeader />
       {hero}
       {courseTypesSection}
       {howToEarnPointsSection}
