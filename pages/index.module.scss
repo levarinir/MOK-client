@@ -67,44 +67,6 @@
   }
 }
 
-.bottomHeroSection {
-  margin-top: 32px;
-  background-image: url("/assets/index-page/hero-background.svg");
-  background-size: cover;
-  background-color: #1f2335;
-  color: white;
-  .container {
-    padding: 32px 32px 0 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
-    gap: 32px;
-    article {
-      margin-bottom: 32px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
-      h2 {
-        font-size: 32px;
-        font-weight: 700;
-        @media (min-width: 768px) {
-          font-size: 32px;
-        }
-      }
-      p {
-        color: #9fa4b9;
-      }
-    }
-    .bottomHeroImage {
-      width: 440px;
-    }
-  }
-}
-
 .registerAccountFormSection {
   background-image: url("/assets/index-page/hero-background.svg");
   background-size: cover;
