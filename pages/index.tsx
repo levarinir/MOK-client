@@ -8,48 +8,13 @@ import { Input } from "@/components/Input";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { SubHeader } from "@/components/SubHeader";
 import { HomePageCoursesListSection } from "@/components/HomePageCoursesSection";
+import { HomePageHeroSection } from "@/components/HomePageHeroSection";
 
 export default function HomePage() {
   const meta = (
     <Head>
       <title>Mok - בגרויות, מכינות אקדמיה</title>
     </Head>
-  );
-
-  const hero = (
-    <section className={styles.hero}>
-      <div className={styles.container}>
-        <div className={styles.heroTexts}>
-          <h1 className={styles.heroHeadline}>
-            קורסים אונליין לבגרויות, מכינות קדם אקדמיות ותואר ראשון
-          </h1>
-          <p className={styles.heroTextSmall}>
-            לימודים לתלמידי בית ספר, משלימי ומשפרי בגרויות וחיילים משוחררים בכל
-            רמות הלימוד במתמטיקה ופיסיקה. לימודי מכינות קדם אקדמיות לשיפור תנאי
-            קבלה לתואר ראשון.
-          </p>
-          <Button>יש לי שאלה!</Button>
-          <div className={styles.heroCta}>
-            <div className={styles.heroCtaProfilePictures}>
-              {/* TODO: replace placeholder image with actual profile pictures */}
-              <img src="https://thispersondoesnotexist.com/image" alt="" />
-              <img src="https://thispersondoesnotexist.com/image" alt="" />
-              <img src="https://thispersondoesnotexist.com/image" alt="" />
-              <img src="https://thispersondoesnotexist.com/image" alt="" />
-            </div>
-            <p>םיעובק םישמתשמ +45k</p>
-          </div>
-        </div>
-        <div className={styles.heroImage}>
-          <Image
-            width={500}
-            height={500}
-            src="/assets/index-page/hero-image.png"
-            alt="Student"
-          />
-        </div>
-      </div>
-    </section>
   );
 
   const courseTypesSection = (
@@ -255,7 +220,7 @@ export default function HomePage() {
       {meta}
       <Header />
       <SubHeader />
-      {hero}
+      <HomePageHeroSection />
       {courseTypesSection}
       {howToEarnPointsSection}
 
