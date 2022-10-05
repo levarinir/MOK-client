@@ -1,44 +1,13 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import styles from "./index.module.scss";
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
-import CourseCard, { CourseCardProps } from "@/components/CourseCard";
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { SubHeader } from "@/components/SubHeader";
-
-export interface CoursesSectionProps {
-  courses: CourseCardProps[];
-  sectionTitle: string;
-  seeMoreLinkHref: string;
-  seeMoreLinkText: string;
-}
-
-function CoursesSection(props: CoursesSectionProps) {
-  return (
-    <section className={styles.coursesListSection}>
-      <div className={styles.container}>
-        <section className={styles.coursesListSectionHeader}>
-          <h2>{props.sectionTitle}</h2>
-          <Link href={props.seeMoreLinkHref}>
-            <a className={styles.seeMoreLink}>
-              <span>{props.seeMoreLinkText}</span>
-              <ArrowLeftIcon />
-            </a>
-          </Link>
-        </section>
-        <div className={styles.cardList}>
-          {props.courses.map((course, index) => (
-            <CourseCard key={index} {...course} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+import { HomePageCoursesListSection } from "@/components/HomePageCoursesSection";
 
 export default function HomePage() {
   const meta = (
@@ -290,7 +259,7 @@ export default function HomePage() {
       {courseTypesSection}
       {howToEarnPointsSection}
 
-      <CoursesSection
+      <HomePageCoursesListSection
         sectionTitle="קורסי תואר ראשון"
         seeMoreLinkText="צפייה בכל הקורסים"
         seeMoreLinkHref="#"
@@ -307,7 +276,7 @@ export default function HomePage() {
         })}
       />
 
-      <CoursesSection
+      <HomePageCoursesListSection
         sectionTitle="קורסי מכינות קדם אקדמיות"
         seeMoreLinkText="צפייה בכל הקורסים"
         seeMoreLinkHref="#"
@@ -324,7 +293,7 @@ export default function HomePage() {
         })}
       />
 
-      <CoursesSection
+      <HomePageCoursesListSection
         sectionTitle="קורסי תואר ראשון"
         seeMoreLinkText="צפייה בכל הקורסים"
         seeMoreLinkHref="#"
