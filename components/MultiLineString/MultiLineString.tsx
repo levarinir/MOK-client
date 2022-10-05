@@ -3,9 +3,11 @@ export interface MultiLineStringProps {
 }
 
 export default function MultiLineString(props: MultiLineStringProps) {
+  console.log(props.multiLineString)
+
   return (
     <>
-      {props.multiLineString.split("\n").map((paragraph, index) => (
+      {props.multiLineString?.split("\n").map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
     </>
