@@ -9,7 +9,14 @@
     .menu {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 8px;
+      .desktopButtons {
+        display: none;
+        @media (min-width: 768px) {
+          display: flex;
+          gap: 8px;
+        }
+      }
       .cartButton {
         padding: 8px;
         height: 44px;
@@ -20,8 +27,9 @@
         padding: 8px;
         height: 44px;
         width: 44px;
-        border: 2px solid var(--custom-color-secondary);
-        border-radius: 16px;
+        @media (min-width: 768px) {
+          display: none;
+        }
       }
     }
   }

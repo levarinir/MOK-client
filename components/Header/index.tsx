@@ -2,6 +2,7 @@ import styles from "./Header.module.scss";
 import { Bars3Icon, ShoppingCartIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../Button";
 
 export default function Header() {
   return (
@@ -18,15 +19,16 @@ export default function Header() {
           </a>
         </Link>
         <div className={styles.menu}>
-          <button
-            className={styles.cartButton}
-            // className="h-11 w-11 p-2 text-custom-secondary"
-          >
-            <ShoppingCartIcon></ShoppingCartIcon>
+          <button className={styles.cartButton}>
+            <ShoppingCartIcon />
           </button>
-          <button className={styles.navToggleButton}>
+          <div className={styles.desktopButtons}>
+            <Button variant="secondary">המשרה</Button>
+            <Button variant="outline">תורבחתה</Button>
+          </div>
+          <Button className={styles.navToggleButton} variant="outline">
             <Bars3Icon />
-          </button>
+          </Button>
         </div>
       </div>
     </header>
