@@ -10,7 +10,7 @@ import { HomePageHeroSection } from "@/components/HomePageHeroSection";
 import { HomePageCoursesSelectionSection } from "@/components/HomePageCoursesSelectionSection";
 import { HomePageHowToEarnPointsSection } from "@/components/HomePageHowToEarnPointsSection";
 import { HomePageTestimonySection } from "@/components/HomePageTestimonySection";
-import Footer from "@/components/Footer/Footer";
+import { Footer } from "@/components/Footer";
 import { HomePageBottomHeroSection } from "@/components/HomePageBottomHeroSection";
 import { HomePageRegisterAccountFormSection } from "@/components/HomePageRegisterAccountFormSection";
 
@@ -60,7 +60,7 @@ export default function HomePage() {
   );
 
   return (
-    <main>  
+    <main>
       {meta}
       <Header />
       <SubHeader />
