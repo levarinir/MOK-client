@@ -11,28 +11,13 @@ import { HomePageCoursesListSection } from "@/components/HomePageCoursesSection"
 import { HomePageHeroSection } from "@/components/HomePageHeroSection";
 import { HomePageCoursesSelectionSection } from "@/components/HomePageCoursesSelectionSection";
 import { HomePageHowToEarnPointsSection } from "@/components/HomePageHowToEarnPointsSection";
+import { HomePageTestimonySection } from "@/components/HomePageTestimonySection";
 
 export default function HomePage() {
   const meta = (
     <Head>
       <title>Mok - בגרויות, מכינות אקדמיה</title>
     </Head>
-  );
-
-  const testimonySection = (
-    <section className={styles.testimonySection}>
-      <div className={styles.container}>
-        <img src="/assets/index-page/testimony-image.png" alt="" />
-        <div className={styles.testimonyContent}>
-          <p className={styles.testimonyMessage}>
-            שדוח ךותב ךיא םיהדמ הז רשאמ רתוי דומלל יתחלצה הדות .רטסמסה לכב יתדמל
-            הרזעה לע םכל הבר
-          </p>
-          <p className={styles.testimonyName}>רותם ניסים</p>
-          <p> הקיטמתמ תניכמב טנדוטס</p>
-        </div>
-      </div>
-    </section>
   );
 
   const howItWorksSection = (
@@ -209,7 +194,7 @@ export default function HomePage() {
         })}
       />
 
-      {testimonySection}
+      <HomePageTestimonySection />
       {howItWorksSection}
       {bottomHeroSection}
       {registerAccountFormSection}
