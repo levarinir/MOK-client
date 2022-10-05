@@ -73,8 +73,13 @@
     .courses {
       display: flex;
       justify-content: center;
+      align-items: baseline;
+      gap: 16px;
+      overflow-x: auto;
       article {
+        width: 280px;
         padding: 16px;
+        flex-shrink: 0;
         border-radius: 16px;
         background: var(--custom-color-secondary);
         header {
@@ -94,6 +99,9 @@
           display: flex;
           flex-direction: column;
           ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
             li {
               background-color: white;
               padding: 6px;
@@ -106,4 +114,3 @@
     }
   }
 }
-
