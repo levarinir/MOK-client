@@ -10,6 +10,7 @@ import { SubHeader } from "@/components/SubHeader";
 import { HomePageCoursesListSection } from "@/components/HomePageCoursesSection";
 import { HomePageHeroSection } from "@/components/HomePageHeroSection";
 import { HomePageCoursesSelectionSection } from "@/components/HomePageCoursesSelectionSection";
+import { HomePageHowToEarnPointsSection } from "@/components/HomePageHowToEarnPointsSection";
 
 export default function HomePage() {
   const meta = (
@@ -30,21 +31,6 @@ export default function HomePage() {
           <p className={styles.testimonyName}>רותם ניסים</p>
           <p> הקיטמתמ תניכמב טנדוטס</p>
         </div>
-      </div>
-    </section>
-  );
-
-  const howToEarnPointsSection = (
-    <section className={styles.howToEarnPointsSection}>
-      <div className={styles.container}>
-        <h2>תהפכו להיות MOK-ים ותרוויחו</h2>
-        <article>
-          <h3>גלו איך צוברים נקודות למימוש </h3>
-          <p>
-            תמליצו לחברים על הקורסים שאהבתם ותוכלו לצבור ולממש את הסכום לקניית
-            כל קורס שתבחרו באתר
-          </p>
-        </article>
       </div>
     </section>
   );
@@ -170,7 +156,7 @@ export default function HomePage() {
       <SubHeader />
       <HomePageHeroSection />
       <HomePageCoursesSelectionSection />
-      {howToEarnPointsSection}
+      <HomePageHowToEarnPointsSection />
 
       <HomePageCoursesListSection
         sectionTitle="קורסי תואר ראשון"
