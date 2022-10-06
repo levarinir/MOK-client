@@ -6,7 +6,15 @@ export default function SubHeader() {
     <section className={styles.subheader}>
       <button className={styles.subheaderMenuItem}>
         <ChevronDownIcon className={styles.subheaderMenuItemIcon} />
-        <span>בחירת תחום לימוד</span>
+        <span>הקיטמתמב תויורגב</span>
+      </button>
+      <button className={styles.subheaderMenuItem}>
+        <ChevronDownIcon className={styles.subheaderMenuItemIcon} />
+        <span>תוניכמ</span>
+      </button>
+      <button className={styles.subheaderMenuItem}>
+        <ChevronDownIcon className={styles.subheaderMenuItemIcon} />
+        <span>תואר ראשון</span>
       </button>
     </section>
   );
