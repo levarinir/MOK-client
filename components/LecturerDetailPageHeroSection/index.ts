@@ -1,1 +1,1 @@
-export { default as LecturerDetailPageHeroSection } from "./LecturerDetailPageHeroSection";
+export * from "./LecturerDetailPageHeroSection";

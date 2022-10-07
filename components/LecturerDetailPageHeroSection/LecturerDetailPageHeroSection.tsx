@@ -10,7 +10,7 @@ export interface LecturerDetailPageHeroSectionProps {
   lecturerFee: number;
 }
 
-export default function LecturerDetailPageHeroSection(
+export function LecturerDetailPageHeroSection(
   props: LecturerDetailPageHeroSectionProps
 ) {
   return (
