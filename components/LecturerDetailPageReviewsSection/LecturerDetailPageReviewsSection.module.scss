@@ -1,0 +1,52 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 1140px;
+  }
+}
+
+.reviewsSection {
+  padding: 24px;
+  .container {
+    article.reviewsBox {
+      padding: 16px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0px 0px 40px 0px #dee8f1;
+      text-align: center;
+      h2.reviewsBoxTitle {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      p.reviewsBoxDescription {
+        margin-bottom: 24px;
+        color: #717171;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      article.ratingNumberBox {
+        padding: 24px;
+        background: #f9f8fe;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        p.ratingNumber {
+          font-weight: 700;
+          font-size: 72px;
+        }
+        p.ratingNumberDescription {
+          margin-top: 16px;
+          color: #6f7e8f;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+      .reviews {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
