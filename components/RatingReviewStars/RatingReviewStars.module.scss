@@ -1,0 +1,10 @@
+.ratingReviewStars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  .starIcon {
+    height: 24px;
+    width: 24px;
+    color: #F7AC3E;
+  }
+}
