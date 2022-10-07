@@ -1,0 +1,76 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 1140px;
+  }
+}
+
+section.heroSection {
+  margin-bottom: 16px;
+  color: white;
+  background-image: url("/assets/index-page/hero-background.svg");
+  background-size: cover;
+  background-color: #1f2335;
+  overflow: hidden;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    text-align: center;
+    .imageContainer {
+      height: 360px;
+      width: 278px;
+      margin-bottom: 48px;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 54px;
+      font-weight: bold;
+    }
+    p.lecturerTitle {
+      margin-bottom: 24px;
+      color: #9fa4b9;
+    }
+    h2 {
+      margin-bottom: 16px;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    p.description {
+      margin-bottom: 48px;
+      color: #9fa4b9;
+    }
+    article {
+      width: 100%;
+      padding: 10px;
+      color: black;
+      background: #ffffff;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .dropdownAndPrice {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        select {
+          flex: 1;
+          padding: 16px;
+          background: #f2f5fa;
+          border: 1px solid #dce4f1;
+          border-radius: 8px;
+        }
+        p {
+          flex: 1;
+          color: #1c9080;
+          font-weight: 500;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
