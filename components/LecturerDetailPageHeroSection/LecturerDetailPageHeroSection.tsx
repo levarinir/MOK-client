@@ -23,25 +23,26 @@ export function LecturerDetailPageHeroSection(
             alt={props.lecturerName}
           />
         </div>
-        <h1>{props.lecturerName}</h1>
-        <p className={styles.lecturerTitle}>{props.lecturerTitle}</p>
-        <h2> הצרמה תודוא</h2>
-        <p className={styles.description}>{props.lecturerDescription}</p>
-
-        <article>
-          <div className={styles.dropdownAndPrice}>
-            <select name="" id="">
-              <option></option>
-            </select>
-            <select name="" id=""></select>
-            <p>
-              {new Intl.NumberFormat(["he", "en"], {
-                style: "currency",
-                currency: "ILS",
-              }).format(props.lecturerFee)}
-            </p>
-          </div>
-          <Button type="submit">סרוקל םשריהל</Button>
+        <article className={styles.lecturerDetail}>
+          <h1>{props.lecturerName}</h1>
+          <p className={styles.lecturerTitle}>{props.lecturerTitle}</p>
+          <h2> הצרמה תודוא</h2>
+          <p className={styles.description}>{props.lecturerDescription}</p>
+          <article>
+            <div className={styles.dropdownAndPrice}>
+              <select name="" id="">
+                <option></option>
+              </select>
+              <select name="" id=""></select>
+              <p>
+                {new Intl.NumberFormat(["he", "en"], {
+                  style: "currency",
+                  currency: "ILS",
+                }).format(props.lecturerFee)}
+              </p>
+            </div>
+            <Button type="submit">סרוקל םשריהל</Button>
+          </article>
         </article>
       </div>
     </section>
