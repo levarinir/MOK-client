@@ -23,6 +23,7 @@
 .header-logo{
     width:114px;
     margin-right: 100px;
+    cursor: pointer;
 }
 
 .header-top-nav{
@@ -139,15 +140,15 @@
     line-height: 18px;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 .nav-link-text img{
     margin-right: 10px;
+    color: #fff;
 }
 
-.footer{
-    background-color: green;
-}
+
 
 /* Menu */
 .dropdown{

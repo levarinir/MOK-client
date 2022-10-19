@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { Button } from "../Button";
-import styles from "./HomePageHeroSection.module.scss"
+import Image from 'next/image';
+import { Button } from '../Button';
+import styles from './HomePageHeroSection.module.scss';
 
 export default function HomePageHeroSection() {
   return (
@@ -24,7 +24,7 @@ export default function HomePageHeroSection() {
               <img src="https://thispersondoesnotexist.com/image" alt="" />
               <img src="https://thispersondoesnotexist.com/image" alt="" />
             </div>
-            <p>םיעובק םישמתשמ +45k</p>
+            <p>45k+ משתמשים רשומים</p>
           </div>
         </div>
         <div className={styles.heroImage}>

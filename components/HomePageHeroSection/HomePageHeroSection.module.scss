@@ -2,7 +2,7 @@
   max-width: 100%;
   margin: 0 auto;
   @media (min-width: 768px) {
-    max-width: 1140px;
+    max-width: 1240px;
   }
 }
 
@@ -10,7 +10,7 @@
   margin-bottom: 16px;
   padding: 32px 16px;
   padding-bottom: 0;
-  background-image: url("/assets/index-page/hero-background.svg");
+  background-image: url('/assets/index-page/hero-background.svg');
   background-size: cover;
   background-color: #1f2335;
   overflow: hidden;
@@ -19,12 +19,10 @@
     flex-direction: column;
     @media (min-width: 768px) {
       flex-direction: row;
-      align-items: flex-end;
     }
     .heroTexts {
       display: flex;
       flex-direction: column;
-      gap: 32px;
       color: white;
       align-items: center;
       @media (min-width: 768px) {
@@ -32,19 +30,21 @@
       }
       .heroHeadline {
         font-size: xx-large;
+        margin-bottom: 30px;
         @media (min-width: 768px) {
-          font-size: 32px;
+          font-size: 52px;
           font-weight: bold;
         }
       }
       .heroTextSmall {
         font-size: small;
+        margin-bottom: 30px;
         @media (min-width: 768px) {
-          font-size: 18px;
+          font-size: 20px;
         }
       }
       .heroCta {
-        margin: 16px 0;
+        margin: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: center;

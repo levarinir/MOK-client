@@ -1,4 +1,4 @@
-import styles from "./HomePageHowToEarnPointsSection.module.scss"
+import styles from './HomePageHowToEarnPointsSection.module.scss';
 
 export default function HomePageHowToEarnPointsSection() {
   return (
@@ -7,10 +7,8 @@ export default function HomePageHowToEarnPointsSection() {
         <h2>תהפכו להיות MOK-ים ותרוויחו</h2>
         <article>
           <h3>גלו איך צוברים נקודות למימוש </h3>
-          <p>
-            תמליצו לחברים על הקורסים שאהבתם ותוכלו לצבור ולממש את הסכום לקניית
-            כל קורס שתבחרו באתר
-          </p>
+          <p>תמליצו לחברים על הקורסים שאהבתם ותוכלו לצבור ולממש</p>
+          <p>את הסכום לקניית כל קורס שתבחרו באתר</p>
         </article>
       </div>
     </section>

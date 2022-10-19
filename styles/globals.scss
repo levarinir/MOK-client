@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* importing preflight.css for CSS reset */
-@import url("https://unpkg.com/tailwindcss@3.1.8/src/css/preflight.css");
+@import url('https://unpkg.com/tailwindcss@3.1.8/src/css/preflight.css');
 
 :root {
   --custom-color-primary: #ffb703;
@@ -10,6 +10,6 @@
 
 body {
   font-family: Heebo, Arial, Helvetica, sans-serif;
-  background: url("/assets/index-page/body-bg.svg");
-  background-size: cover;
+  // background: url("/assets/index-page/body-bg.svg");
+  // background-size: cover;
 }

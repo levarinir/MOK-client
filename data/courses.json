@@ -1,0 +1,272 @@
+[
+  {
+    "courseSelectionTabName": "בגרויות במתמטיקה",
+    "courseSelectionTabTitleWidth": "155px",
+    "courseSelectionHeadingText": "קורסים של בגרויות במתמטיקה",
+    "courseSelectionContentText": "בחלק של בגרויות  במתמטיקה באתר MOK תמצאו קורסים אונליין ללימוד כל הרמות במתמטיקה עבור 5, 4, 3 יחידות לימוד בהתאם לתכנית לימודים העדכנית של משרד החינוך. הקורסים מתאימים הן לתלמידי בית ספר שרוצים לשפר את השליטה שלהם בחומר לפני הבחינה או המתכונת והן לחיילים משוחררים שרוצים להעלות את הסכם ולשפר את תעודת הבגרות לקראת שיפור תנאי הקבלה לתואר ראשון. הקורסים מועברים ע”י מרצים מוכרים בתעשייה בעלי רקורד עשיר בתחום ולימדו במוסדות הנבחרים במדינה.",
+    "courseTypes": [
+      {
+        "name": "5 יחידות",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "קורס לשאלון 581 (806)",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/581.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "קורס לשאלון 582 (807)",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/582.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      },
+      {
+        "name": "4 יחידות",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "קורס לשאלון 481 (804)",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/481.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "קורס לשאלון 482 (805)",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/482.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      },
+      {
+        "name": "3 יחידות",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "קורס לשאלון 382 (803)",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/382.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      },
+      {
+        "name": "קורס ריענון",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "קדם אלגברה וגיאומטריה",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/prealg.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseSelectionTabName": "מכינות קדם אקדמיות",
+    "courseSelectionTabTitleWidth": "175px",
+    "courseSelectionHeadingText": "קורסים של מכינות קדם אקדמיות",
+    "courseSelectionContentText": "בחלק של מכינות אקדמיות ב-MOK תמצאו קורסים המשפרים את סיכויים להצליח במכינה שלכם על ידי boost נוסף של ארגון החומר לפי סרטוני וידאו מסודרים בהתאם לסילבוס עדכני וייעודי למוסד לימוד שלכם. בנוסף תראו קורסים המתאימים לתלמידים הלומדים עצמאית ומנסים לשפר את סיכויי הקבלה שלהם לתואר ראשון לאוניברסטאות, טכניון ומכללות. התכנים כוללים מכינות במתמטיקה, פיסיקה, מבחני סיווג לקבלה למוסדות לימוד  ",
+    "courseTypes": [
+      {
+        "name": "טכניון",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "מכינת מתמטיקה - סמסטר ראשון",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/sam1.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "מכינת מתמטיקה - תואר שני",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/sam2.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "מבחן סיווג קבלה לטכניון",
+            "icon": "/static/icons/open-book.png",
+            "cardImageSrc": "/static/images/courses/sivog.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "בחינות סימולציה",
+            "icon": "/static/icons/square.png",
+            "cardImageSrc": "/static/images/courses/simulation.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      },
+      {
+        "name": "אוניברסיטת בן גוריון  ",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "מכינת מתמטיקה - סמסטר ראשון",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/bensam1.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "מכינת מתמטיקה - תואר שני",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/bensam2.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "בחינות סימולציה",
+            "icon": "/static/icons/square.png",
+            "cardImageSrc": "/static/images/courses/bensimulation.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "פתרונות ",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/benanswer.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseSelectionTabName": "תואר ראשון",
+    "courseSelectionTabTitleWidth": "100px",
+    "courseSelectionHeadingText": "קורסים של תואר ראשון",
+    "courseSelectionContentText": "בחלק של מכינות אקדמיות באתר MOK תמצאו קורסים החופפים לקורסי ליבה הנלמדים בתואר הראשון למדעים מדוייקים או תארי הנדסה וכוללים קורסים כמו אלגברה 1מ, אלגברה לינארית, חדוא 1, חדוא 2, אינפי ועוד. הקורסים נועדו כדי להקל על סטודנטים לתואר ראשון להנגיש   תכנים הנלמדים באוניברסיטאות ומכללות בצורה של שיעורים מוקלטים, מתוייגים ומסודרים אשר מועברים בהתאם לתכניות לימוד של מוסדות להשכלה גבוהה ונלמדים ע”י מרצים בכירים בתעשייה כמו טכניון ואוניברסיטת בן גוריון.  ",
+    "courseTypes": [
+      {
+        "name": "קורסי ליבה",
+        "buttonTitle": "צפייה בכל הקורסים",
+        "courses": [
+          {
+            "title": "מד”ר",
+            "icon": "/static/icons/square.png",
+            "cardImageSrc": "/static/images/courses/mdr.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "אלגברה 1מ",
+            "icon": "/static/icons/diagram.png",
+            "cardImageSrc": "/static/images/courses/alg1m.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          },
+          {
+            "title": "אלגברה לינארית",
+            "icon": "/static/icons/open-book.png",
+            "cardImageSrc": "/static/images/courses/linear.png",
+            "lecturer": "ארז כהן",
+            "price": "48",
+            "lessonsNumber": "12",
+            "usersNumber": "1.2",
+            "rating": "4.1",
+            "href": "?",
+            "duration": "12"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -7,38 +7,38 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.navigation}>
           <article>
-            <p>5 תודיחי</p>
+            <p>5  יחידות</p>
             <ul>
               <li>
                 <Link href="#">
-                  <a>806 ןולאש</a>
+                  <a>שאלון 806</a>
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <a>806 ןולאש</a>
+                  <a>שאלון 806</a>
                 </Link>
               </li>
             </ul>
           </article>
           <article>
-            <p>5 תודיחי</p>
+            <p>5 יחידות</p>
             <ul>
               <li>
                 <Link href="#">
-                  <a>806 ןולאש</a>
+                <a>שאלון 806</a>
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <a>806 ןולאש</a>
+                <a>שאלון 806</a>
                 </Link>
               </li>
             </ul>
           </article>
         </div>
         <div className={styles.copyright}>
-          <p> הימדקאו תוניכמ ,תויורגבל הנכה - MOK © </p>
+          <p> הכנה לבגרויות, מכינות ואקדמיה - MOK © </p>
         </div>
       </div>
     </footer>

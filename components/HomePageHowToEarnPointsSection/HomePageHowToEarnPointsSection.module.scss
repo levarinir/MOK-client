@@ -1,14 +1,16 @@
 .container {
   max-width: 100%;
   margin: 0 auto;
+
   @media (min-width: 768px) {
-    max-width: 1140px;
+    max-width: 1240px;
   }
 }
 
 .howToEarnPointsSection {
   .container {
-    padding: 32px;
+    padding: 32px 0px;
+    margin-bottom: 40px;
     h2 {
       margin-bottom: 32px;
       font-size: 48px;
@@ -21,10 +23,10 @@
       color: white;
       background: linear-gradient(
           0deg,
-          #1c2135 38.54%,
+          #1c2135 10.54%,
           rgba(28, 33, 53, 0) 100%
         ),
-        url("/assets/index-page/student-writing-image.png");
+        url('/assets/index-page/student-writing-image.png');
       background-size: cover;
       background-position: center;
       @media (min-width: 768px) {
@@ -34,7 +36,7 @@
             #1c2135 38.54%,
             rgba(28, 33, 53, 0) 100%
           ),
-          url("/assets/index-page/student-writing-image.png");
+          url('/assets/index-page/student-writing-image.png');
         background-size: cover;
       }
       h3 {
@@ -48,4 +50,3 @@
     }
   }
 }
-

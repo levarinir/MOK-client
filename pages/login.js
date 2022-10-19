@@ -55,7 +55,6 @@ const Login = () => {
         email,
         password,
       });
-      console.log(response); // data > token / user
       authenticate(response, () =>
         isAuth() && !isAuth().role ? Router.push('/') : Router.push('/')
       );
