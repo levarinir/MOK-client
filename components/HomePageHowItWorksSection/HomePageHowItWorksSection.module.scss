@@ -9,12 +9,13 @@
 .howItWorkSection {
   .container {
     padding: 16px;
-    padding-top: 48px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    max-width: 1000px;
+
     h2 {
-      margin-bottom: 48px;
+      margin-bottom: 30px;
       font-size: 32px;
       font-weight: 700;
       text-align: center;
@@ -27,6 +28,8 @@
       align-items: stretch;
       flex-direction: column;
       gap: 16px;
+      margin-bottom: 20px;
+      padding-top: 20px;
       @media (min-width: 768px) {
         flex-direction: row;
         gap: 128px;
@@ -42,12 +45,12 @@
         object-fit: cover;
         filter: drop-shadow(0px 18px 29px rgba(131, 153, 173, 0.5));
         @media (min-width: 768px) {
-          height: 480px;
+          height: 300px;
         }
       }
-      article {
+      div {
         display: flex;
-        align-items: stretch;
+        justify-content: center;
         flex-direction: column;
         gap: 16px;
         h3 {
@@ -60,7 +63,7 @@
         .buttons {
           display: flex;
           flex-direction: row;
-          gap: 16px;
+          justify-content: flex-start;
         }
       }
     }

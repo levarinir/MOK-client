@@ -1,4 +1,4 @@
-import styles from "./HomePageTestimonySection.module.scss"
+import styles from './HomePageTestimonySection.module.scss';
 
 export default function HomePageTestimonySection() {
   return (
@@ -7,11 +7,14 @@ export default function HomePageTestimonySection() {
         <img src="/assets/index-page/testimony-image.png" alt="" />
         <div className={styles.testimonyContent}>
           <p className={styles.testimonyMessage}>
-            שדוח ךותב ךיא םיהדמ הז רשאמ רתוי דומלל יתחלצה הדות .רטסמסה לכב יתדמל
-            הרזעה לע םכל הבר
+            זה מדהים איך בתוך חודש הצלחתי
           </p>
+          <p className={styles.testimonyMessage}>
+            ללמוד יותר מאשר למדתי בכל הסמסטר
+          </p>
+          <p className={styles.testimonyMessage}>תודה רבה לכם על העזרה</p>
           <p className={styles.testimonyName}>רותם ניסים</p>
-          <p> הקיטמתמ תניכמב טנדוטס</p>
+          <p className={styles.testimonyWhere}>סטודנט למכינת מתמטיקה בטכניון</p>
         </div>
       </div>
     </section>

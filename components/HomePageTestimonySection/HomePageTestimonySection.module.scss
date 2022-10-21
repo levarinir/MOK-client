@@ -12,11 +12,11 @@
   background-color: #1f2335;
   color: white;
   .container {
-    width: 720px;
+    max-width: 1240px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
     @media (min-width: 768px) {
       flex-direction: row-reverse;
     }
@@ -30,16 +30,16 @@
         align-items: flex-start;
       }
       .testimonyMessage {
-        margin-bottom: 16px;
         font-size: 20px;
         font-weight: 500;
         @media (min-width: 768px) {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
       .testimonyName {
         @media (min-width: 768px) {
-          font-size: 30px;
+          margin-top: 20px;
+          font-size: 20px;
           font-weight: bold;
         }
       }

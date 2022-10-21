@@ -17,10 +17,12 @@
     background-color: var(--custom-color-secondary);
     border-color: var(--custom-color-secondary);
   }
-  
+  &.primary2 {
+    background: var(--custom-color-primary);
+    color: white;
+  }
 }
-.full{
-  width:100%;
+.full {
+  width: 100%;
   border-radius: 8px;
 }
-

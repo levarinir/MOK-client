@@ -1,5 +1,5 @@
 .registerAccountFormSection {
-  background-image: url("/assets/index-page/hero-background.svg");
+  background-image: url('/assets/index-page/hero-background.svg');
   background-size: cover;
   background-color: #f7ac3e;
   .container {
@@ -18,6 +18,10 @@
       gap: 16px;
       @media (min-width: 768px) {
         flex-direction: row;
+      }
+      .sendBtn {
+        width: 264px;
+        height: 80px;
       }
     }
   }
